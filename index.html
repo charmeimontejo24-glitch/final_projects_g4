@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CG Web Atelier</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header">
+
+        <div class="navbar">
+
+            <!-- LOGO -->
+            <a href="#" class="logo" onclick="showHome()">
+
+                <div class="logo-icon">
+                    CG
+                </div>
+
+                <div class="logo-text">
+                    <strong>CG WEB ATELIER</strong>
+                    <span>CREATIVE WEB DEVELOPMENT</span>
+                </div>
+
+            </a>
+
+
+            <!-- MENU -->
+            <nav class="nav-menu">
+
+                <a href="#" class="nav-link active" onclick="showHome(event)">
+                    Home
+                </a>
+
+                <a href="#" class="nav-link" onclick="comingSoon(event, 'About')">
+                    About
+                </a>
+
+                <a href="#" class="nav-link" onclick="comingSoon(event, 'Services')">
+                    Services
+                </a>
+
+                <a href="#" class="nav-link" onclick="comingSoon(event, 'Portfolio')">
+                    Portfolio
+                </a>
+
+                <a href="#" class="nav-link" onclick="comingSoon(event, 'Team')">
+                    Team
+                </a>
+
+                <a href="#" class="contact-button" onclick="comingSoon(event, 'Contact')">
+                    Let's Talk ↗
+                </a>
+
+            </nav>
+
+
+            <!-- MOBILE MENU -->
+            <button class="menu-button" id="menuButton">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= HOME PAGE ================= -->
+
+    <main id="homePage">
+
+        <section class="hero">
+
+            <!-- LEFT SIDE -->
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+
+                    <span class="dot"></span>
+
+                    CREATIVE WEB DEVELOPMENT
+
+                </div>
+
+
+                <h1>
+
+                    Your Vision,
+                    <br>
+
+                    <span>Our Code.</span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    We create modern, responsive websites
+                    that help your brand grow online.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#" class="primary-button"
+                       onclick="comingSoon(event, 'Our Services')">
+
+                        Get Started ↗
+
+                    </a>
+
+
+                    <a href="#" class="secondary-button"
+                       onclick="comingSoon(event, 'Portfolio')">
+
+                        View Portfolio
+
+                    </a>
+
+                </div>
+
+
+                <!-- SMALL TAGS -->
+
+                <div class="hero-tags">
+
+                    <span>
+                        Soft Gradients
+                    </span>
+
+                    <span>
+                        Rounded UI
+                    </span>
+
+                    <span>
+                        Smooth Transitions
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT SIDE WEBSITE PREVIEW -->
+
+            <div class="website-preview">
+
+                <!-- BROWSER BAR -->
+
+                <div class="browser-bar">
+
+                    <div class="browser-dots">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="browser-url">
+
+                        cgwebatelier.com
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- WEBSITE MOCKUP -->
+
+                <div class="preview-website">
+
+                    <!-- MOCKUP NAV -->
+
+                    <div class="preview-nav">
+
+                        <strong>
+                            CG WEB ATELIER
+                        </strong>
+
+                        <div class="preview-links">
+
+                            <span>Home</span>
+                            <span>About</span>
+                            <span>Services</span>
+                            <span>Portfolio</span>
+
+                        </div>
+
+                        <button>
+                            Let's Talk
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- MOCKUP HERO -->
+
+                    <div class="preview-hero">
+
+                        <div class="preview-text">
+
+                            <small>
+                                CREATIVE DIGITAL STUDIO
+                            </small>
+
+                            <h2>
+
+                                Websites made
+                                <br>
+
+                                <span>beautifully.</span>
+
+                            </h2>
+
+                            <p>
+                                Modern websites designed
+                                for people and brands.
+                            </p>
+
+                            <button>
+                                Explore ↗
+                            </button>
+
+                        </div>
+
+
+                        <!-- ABSTRACT SHAPE -->
+
+                        <div class="abstract-art">
+
+                            <div class="shape shape-1"></div>
+
+                            <div class="shape shape-2"></div>
+
+                            <div class="shape shape-3"></div>
+
+                            <div class="shape-ring"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= HOMEPAGE BOTTOM INFO ================= -->
+
+        <section class="home-info">
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    ✦
+                </div>
+
+                <div>
+                    <small>
+                        DESIGN
+                    </small>
+
+                    <h3>
+                        Creative & Modern
+                    </h3>
+                </div>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    &lt;/&gt;
+                </div>
+
+                <div>
+                    <small>
+                        DEVELOPMENT
+                    </small>
+
+                    <h3>
+                        Clean & Responsive
+                    </h3>
+                </div>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    ◇
+                </div>
+
+                <div>
+                    <small>
+                        EXPERIENCE
+                    </small>
+
+                    <h3>
+                        Simple & User Friendly
+                    </h3>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <strong>
+                    CG WEB ATELIER
+                </strong>
+
+                <p>
+                    Your Vision. Our Code.
+                </p>
+
+            </div>
+
+
+            <span>
+                © 2026 CG Web Atelier
+            </span>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
